@@ -1,6 +1,3 @@
-# Lab Report 1-
-
-
 ## cd command with no arguments:
 ```
 Input:
