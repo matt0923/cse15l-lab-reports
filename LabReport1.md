@@ -1,6 +1,6 @@
 ## Lab Report 1:
 
-** cd no arguments: **
+**cd no arguments-**
 ```
 Input:
 [user@sahara ~]$cd
