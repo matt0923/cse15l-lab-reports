@@ -1,3 +1,6 @@
+## Lab Report 1:
+
+** cd no arguments: **
 ```
 Input:
 [user@sahara ~]$cd
