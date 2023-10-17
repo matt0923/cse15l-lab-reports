@@ -9,7 +9,7 @@ Directory before code was ran: **/home** <br>
 Directory after code was ran: **/home** <br>
 Error? **No** <br>
 <br>
-Running the command "cd" results in nothing being done because the cd command needs a target directory to jump to. Even though this command doesn't directly result in an error, using this command without an argument gets us nowhere. 
+Running the command "cd" with no arguments results in you being put in the home directory. In this example we were already in the home directory, making it look like the command did nothing, when in reality it functioned as intended.  
 
 ## cd command with a path to a directory as an argument:
 ```
@@ -84,10 +84,10 @@ Output:
 Nothing (Crashes terminal)
 ```
 Directory before the code was ran: **/home** <br>
-Directory after the code was ran: **None? (Terminal crash)** <br>
-Error? **Yes** <br>
+Directory after the code was ran: **/home** <br>
+Error? **No** <br>
 <br>
-Running the code "cat" results in a terminal crashing error, because no file was provided as an argument, so the terminal crashed. The cat command normally lets you basically open a file in the terminal without having the file open for editing 
+Running the code "cat" with no arguments just reads data from the standard input and writes the input data to a standard output. 
 
 ## cat with a directory as an argument: 
 ```
