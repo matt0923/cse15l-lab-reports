@@ -81,7 +81,7 @@ Running the code "ls en-us" results in the file en-us.txt being printed without 
 Input:
 [user@sahara ~]$ cat
 Output:
-Nothing (Crashes terminal)
+
 ```
 Directory before the code was ran: **/home** <br>
 Directory after the code was ran: **/home** <br>
