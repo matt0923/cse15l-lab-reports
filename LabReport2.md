@@ -21,4 +21,4 @@ The two methods that are called in my code are the same two from the previous ex
 ![Image](remoteconnect.png)
 
 # Part 3
-One thing that I learned from weeks 2 and 3 was how to gain access to a remote computer. We did this by using the ssh to connect to another computer remotely, and using the password that we knew to gain access. By week 3, we made it so that we didn't even need a password to gain access to the remote computer, which I thought was really interesting. 
+One thing that I learned from weeks 2 and 3 was how to gain access to a remote computer. We did this by using the ssh command to connect to another computer remotely, and using the password that we knew to gain access. By week 3, we made it so that we didn't even need a password to gain access to the remote computer, which I thought was really interesting. 
