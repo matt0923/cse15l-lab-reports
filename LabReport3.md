@@ -60,54 +60,9 @@ Output:
 Boston
 Boston
 Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
-Boston
+...
 ```
-This particular grep -o command  prints all of the instances of the word boston in the file chapter-1.txt <br>
+This particular grep -o command  prints all of the instances of the word Boston in the file chapter-1.txt <br>
 <br> 
 **Using -o as the option on a directory:**
 ```
@@ -118,92 +73,81 @@ Output:
 911report/chapter-1.txt:Boston
 911report/chapter-1.txt:Boston
 911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-1.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.2.txt:Boston
-911report/chapter-13.4.txt:Boston
-911report/chapter-13.5.txt:Boston
-911report/chapter-13.5.txt:Boston
-911report/chapter-2.txt:Boston
-911report/chapter-6.txt:Boston
-911report/chapter-6.txt:Boston
-911report/chapter-6.txt:Boston
-911report/chapter-6.txt:Boston
-911report/chapter-7.txt:Boston
-911report/chapter-7.txt:Boston
-911report/chapter-7.txt:Boston
-911report/chapter-7.txt:Boston
-911report/chapter-7.txt:Boston
-911report/chapter-7.txt:Boston
-911report/chapter-8.txt:Boston
+...
 ```
-This particular grep -r -o command (-r needed to look inside of a directory) is used to display all of the instances of the word boston in the entire 911reports directory, stating which text files they're in, and using the -o command to only display the matched parts of the matching lines. <br>
+This particular grep -r -o command (-r needed to look inside of a directory) is used to display all of the instances of the word Boston in each of the files in the entire 911reports directory, stating which text files they're in, and using the -o command to only display the matched parts of the matching lines. <br>
 <br>
 **Using -v as the option on a file:**
+```
+Input: 
+Matthew@DESKTOP-OKA7K02 MINGW64 ~/Documents/GitHub/docsearch/technical/911report (main)
+$ grep -v "a" chapter-1.txt
+
+Output:
+
+"WE HAVE SOME PLANES"
+
+
+
+INSIDE THE FOUR FLIGHTS
+...
+```
+This particular -v command prints out all of the lines in the text file (chapter-1.txt) that don't match our target (a). <br>
+<br>
+**Using -v as the option on a file:**
+```
+Input: 
+Matthew@DESKTOP-OKA7K02 MINGW64 ~/Documents/GitHub/docsearch/technical (main)
+$ grep -r -v "the" biomed
+Output:
+plos/pmed.0020238.txt:        codeine, ibuprofen, lorazepam, 5HT1 receptor agonists, and acyclovir were not efficacious
+plos/pmed.0020238.txt:        in PHN.
+plos/pmed.0020238.txt:        gabapentinoids for second-line use. Topical treatments, such as lidocaine or capsaicin,
+...
+```
+This particular -r -v command (-r needed to look inside of a directory) prints out all of the lines in all of the text files in the entire directory biomed that do not contain "the" <br>
+<br>
+**Using -c as the option on a file:**
+```
+Input:
+Matthew@DESKTOP-OKA7K02 MINGW64 ~/Documents/GitHub/docsearch/technical/911report (main)
+$ grep -c "the" chapter-1.txt
+Output:
+313
+```
+This particular -c command prints out the amount of lines that contain the word "the" in the chapter-1.txt file. <br>
+<br>
+**Using -c as the option on a directory:**
+```
+Input: 
+Matthew@DESKTOP-OKA7K02 MINGW64 ~/Documents/GitHub/docsearch/technical (main)
+$ grep -r -c "the" 911report
+Output:
+911report/chapter-1.txt:313
+911report/chapter-10.txt:336
+911report/chapter-11.txt:533
+...
+```
+This particular -r -c command (-r needed to look inside of a directory) prints out the amount of lines in each of the text files in the directory 911report that contain "the", seperated by file. <br>
+<br>
+**Using -l as the option on a file:**
+```
+Input:
+Matthew@DESKTOP-OKA7K02 MINGW64 ~/Documents/GitHub/docsearch/technical/911report (main)
+$ grep -l "the" chapter-2.txt
+Output:
+chapter-2.txt
+```
+This particular -l command prints out the list of filenames that contain the word the, which can only either be nothing or that text file's name (depending on whether or not the text file contains the target word/phrase/character).
+**Using -l as the option on a directory:**
+```
+Input: 
+Matthew@DESKTOP-OKA7K02 MINGW64 ~/Documents/GitHub/docsearch/technical (main)
+$ grep -l -r "the" 911report
+Output:
+911report/chapter-1.txt
+911report/chapter-10.txt
+911report/chapter-11.txt
+...
+```
+This particular -l -r command (-r needed to look inside of a directory) prints out the names of all of the txt files inside of the directory 911 report that contain the word the in them. 
