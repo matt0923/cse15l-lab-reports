@@ -47,8 +47,8 @@ junit tests faster because I don't have to type them out.
 vim ListExamples.java
 /index1
 <enter>
-n x 9
-l x 6
+nnnnnnnnn
+llllll
 i
 <backspace>
 2
