@@ -2,6 +2,7 @@
 **Input:**
 ```
 ssh cse15lfa23iu@ieng6.ucsd.edu
+<Enter>
 ```
 **Result:**
 <br>
@@ -14,6 +15,7 @@ This time, it did not prompt me for a password like we expected, because of a pr
 **Input:**
 ```
 git clone git@github.com:matt0923/lab7.git
+<Enter>
 ```
 **Result:**
 <br>
@@ -27,7 +29,9 @@ being the only distinguishable trait.
 **Input:**
 ```
 cd lab7
+<Enter>
 bash test.sh
+<Enter>
 ```
 **Result:**
 <br>
@@ -59,3 +63,39 @@ I entered vim for the file ListExamples.java, searched for the instances of inde
 the one I needed to change, by going forward with n. Once I got to the one I was looking for, I moved my cursor to the
 right of the word using l. I then entered insert mode, removing the 1 and adding the 2 as instructed. I then went back
 into normal mode with escape, and then typed :wq to save and quit. 
+
+# Step 8 (Run the tests again, showing that they now work):
+**Input:**
+```
+<up><up><enter>
+```
+**Result:**
+<br>
+![Image](Matthew%20Williams%20Step%208.png) 
+
+The bash test.sh file was 2 up in the search history, so I used the up arrow to access it. Once I ran the tests again, 
+I got the expected output of two successful tests. 
+
+# Step 9 (Commit and push):
+**Input:**
+```
+git add ListExamples.java
+<Enter>
+git push
+<Enter>
+git commit
+<Enter>
+i
+This is for my lab report!
+<Esc>
+:wq
+git push
+```
+**Result:**
+<br>
+![Image](Matthew%20Williams%20Step%209.png) 
+
+I git added the changed ListExamples.java file, staging it for commit. I then git pushed a little early, so it didn't do anything. 
+Afterwards, I git committed, which brought me into vim. I then entered insert mode with i, and added my commit message "This is for
+my lab report!", then went back into normal mode with escape. I then used :wq to save and quit. I then used git push like it was 
+intended to be used, resulting in the changes being committed to my lab7 repository. 
