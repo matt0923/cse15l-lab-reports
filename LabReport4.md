@@ -95,7 +95,8 @@ git push
 <br>
 ![Image](Matthew%20Williams%20Step%209.png) 
 
-I git added the changed ListExamples.java file, staging it for commit. I then git pushed a little early, so it didn't do anything. 
+I git added the changed ListExamples.java file, staging it for commit. I then git pushed a little early, so it didn't do anything
+(no changes committed to push yet). 
 Afterwards, I git committed, which brought me into vim. I then entered insert mode with i, and added my commit message "This is for
 my lab report!", then went back into normal mode with escape. I then used :wq to save and quit. I then used git push like it was 
 intended to be used, resulting in the changes being committed to my lab7 repository. 
