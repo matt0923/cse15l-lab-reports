@@ -64,7 +64,7 @@ Boston
 ```
 This particular ```grep -o``` command  prints all of the instances of the word Boston in the file chapter-1.txt <br>
 <br>
-Sources: [web source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and experimenting in VS code
+Sources: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ and experimenting in VS code
 <br>
 <br> 
 **Using ```-o``` as the option on a directory:**
@@ -80,7 +80,7 @@ Output:
 ```
 This particular ```grep -r -o``` command (```-r``` needed to look inside of a directory) is used to display all of the instances of the word Boston in each of the files in the entire 911reports directory, stating which text files they're in, and using the ```-o``` command to only display the matched parts of the matching lines. <br>
 <br>
-Sources: [web source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and experimenting in VS code
+Sources: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ and experimenting in VS code
 <br>
 <br>
 **Using ```-v``` as the option on a file:**
@@ -100,7 +100,7 @@ INSIDE THE FOUR FLIGHTS
 ```
 This particular ```grep -v``` command prints out all of the lines in the text file (chapter-1.txt) that don't match our target (a). <br>
 <br>
-Sources: [web source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and experimenting in VS code
+Sources: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ and experimenting in VS code
 <br>
 <br>
 **Using ```-v``` as the option on a file:**
@@ -116,7 +116,7 @@ plos/pmed.0020238.txt:        gabapentinoids for second-line use. Topical treatm
 ```
 This particular ```grep -r -v``` command (-r needed to look inside of a directory) prints out all of the lines in all of the text files in the entire directory biomed that do not contain "the" <br>
 <br>
-Sources: [web source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and experimenting in VS code
+Sources: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ and experimenting in VS code
 <br>
 <br>
 **Using ```-c``` as the option on a file:**
@@ -129,7 +129,7 @@ Output:
 ```
 This particular ```grep -c``` command prints out the amount of lines that contain the word "the" in the chapter-1.txt file. <br>
 <br>
-Sources: [web source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and experimenting in VS code
+Sources: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ and experimenting in VS code
 <br>
 <br>
 **Using ```-c``` as the option on a directory:**
@@ -145,7 +145,7 @@ Output:
 ```
 This particular ```grep -r -c``` command (```-r``` needed to look inside of a directory) prints out the amount of lines in each of the text files in the directory 911report that contain "the", seperated by file. <br>
 <br>
-Sources: [web source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and experimenting in VS code
+Sources: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ and experimenting in VS code
 <br>
 <br>
 **Using ```-l``` as the option on a file:**
@@ -159,7 +159,7 @@ chapter-2.txt
 This particular ```grep -l``` command prints out the list of filenames that contain the word the, which can only either be nothing or that text file's name (depending on whether or not the text file contains the target word/phrase/character).
 <br>
 <br>
-Sources: [web source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and experimenting in VS code
+Sources: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ and experimenting in VS code
 <br>
 <br>
 **Using ```-l``` as the option on a directory:**
@@ -176,5 +176,5 @@ Output:
 This particular ```grep -l -r``` command (```-r``` needed to look inside of a directory) prints out the names of all of the txt files inside of the directory 911 report that contain the word the in them. 
 <br>
 <br>
-Sources: [web source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) and experimenting in VS code
+Sources: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ and experimenting in VS code
 <br>
